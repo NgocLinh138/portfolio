@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: transparent;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav li {
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+header nav li a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  text-decoration: none;
+}
+
+header .logo h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+header nav button {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+header nav button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+header li a::after {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 0;
+  transition: all 0.3s;
+  margin: 0.7px;
+}
+
+header li:hover a::after {
+  width: 100%;
+}
+
+header li a::before {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+  transform: translateX(100%);
+}
+
+header li:hover a::before {
+    width: 100%;
+    transform: translateX(0%);
+}
+
+.line {
+  background-color: #fff;
+  height: 2px;
+  width: 0;
+  transition: all 1s;
+}
+
+/* background */
+.background {
+  height: 100vh;
+  background-image: url(http://shanereact.ibthemespro.com/img/slider/3.jpg);
+  background-size: cover;
+}
